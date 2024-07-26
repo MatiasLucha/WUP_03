@@ -46,6 +46,14 @@ basicCN + geom_boxplot()
 ```
 This box plot shows that the further from the front (middle to back), the higher values we get for alcohol consumptions.
 
+### Numerical summary
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+### Inferential Results
+
 ## Now with ggplot - first select the basic data
 
 ```{r}

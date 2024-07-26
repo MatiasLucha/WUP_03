@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Matias Lucha"
+date: "Summer 2024"
 output: html_document
 ---
 
@@ -14,8 +14,26 @@ require(tidyverse)
 require(tigerstats)
 davisdata <- read.csv(file="UCDavis.csv")
 ```
-## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
+# Introduction
+Our Goal is to answer this question Is there a difference between the alcohol consumed between the row you choose to sit in?
+
+The data came from UCDavis in the year
 ## you choose to sit in??
+
+$H_0$: There is no difference between the average number of drinks consumed and the row people sit in.
+
+$H_A$: There is a difference between number of drinks and row for at least two rows.
+
+#Methods: 
+In the data set davisdata. Seat is a categorical variable and alcohol is numerical.
+
+we try to predict alcohol ~ Seat so we use the Num ~ Cat
+
+# Results
+
+## Descriptive Results
+
+### Graphical summary
 
 ## Now with ggplot - first select the basic data
 

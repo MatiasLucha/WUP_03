@@ -35,6 +35,17 @@ we try to predict alcohol ~ Seat so we use the Num ~ Cat
 
 ### Graphical summary
 
+```{r}
+basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
+```
+
+Now add in boxplot
+
+```{r}
+basicCN + geom_boxplot()
+```
+This box plot shows that the further from the front (middle to back), the higher values we get for alcohol consumptions.
+
 ## Now with ggplot - first select the basic data
 
 ```{r}

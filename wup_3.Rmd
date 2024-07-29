@@ -44,6 +44,7 @@ Now add in boxplot
 ```{r}
 basicCN + geom_boxplot()
 ```
+
 This box plot shows that the further from the front (middle to back), the higher values we get for alcohol consumptions.
 
 ### Numerical summary
@@ -51,6 +52,9 @@ This box plot shows that the further from the front (middle to back), the higher
 ```{r}
 favstats(alcohol~Seat,data=ucdavis1)
 ```
+
+This graph shows that as you go further in seating, the amount (median) of alcohol consumption increases. 
+
 
 ### Inferential Results
 

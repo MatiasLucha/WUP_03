@@ -70,8 +70,8 @@ Therefore, there is a difference in alcohol consumption and where a person may s
 plot(TukeyHSD(model1))
 ```
 
-
+From the middle to the front, there is a 0 statistical difference in alcohol consumption from those who sit in the middle to those who sit in the front. However, there is a difference in alcohol consumption from the front and back rows, and the middle and back rows. 
 ## Conclusions
 
-Due to the p-value being less than 0.05, at 0.000116 
+Due to the p-value being less than 0.05, at 0.000116, we reject the null hypothesis, and therefore alcohol consumption is dependent on where someone may sit. There is a difference between alcohol consumption and those who sit in the front row to the back row, as well as the middle row to the back row. There is no statistical difference in consumption from the front row to the middle row.
 

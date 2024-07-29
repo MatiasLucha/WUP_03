@@ -53,33 +53,25 @@ This box plot shows that the further from the front (middle to back), the higher
 favstats(alcohol~Seat,data=ucdavis1)
 ```
 
-This graph shows that as you go further in seating, the amount (median) of alcohol consumption increases. 
+The numerical summary shows that as you go further in seating, the amount (median) of alcohol consumption increases. 
 
 
 ### Inferential Results
 
-## Now with ggplot - first select the basic data
-
 ```{r}
-basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
 ```
-## Now add in boxplot
+The p-value of this anova test is 0.000116 which is less than 0.05, therefore we reject the null hypothesis.
+Therefore, there is a difference in alcohol consumption and where a person may sit depending on row. 
 
+## When significant follow up with TukeyHSD
 ```{r}
-basicCN + geom_boxplot()
-```
-  
-  
-### get fancy  
-
-```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
+plot(TukeyHSD(model1))
 ```
 
-## Numerical Summarys 
-
-## Inferential Tests
 
 ## Conclusions
 
+Due to the p-value being less than 0.05, at 0.000116 
 
